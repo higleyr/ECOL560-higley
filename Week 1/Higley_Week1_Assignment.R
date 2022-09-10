@@ -29,7 +29,7 @@
 # Assignment Start#
 
 a <- c('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o')
-b <- c('a','b','c','d','d','d','d','d','d','d','d','d','d','d','d')
+b <- c('a','b','c','d','d','d','d','d','d','d','d','d','d','d','d') #too many unique values
 c <- c(1,2,3,4,5,6,7,8,9,10,11,12,13,15) 
 d <- c(1,2,3,4,5,6,7,7,8,9,10,11,11,12,13)
 e <- c(1,1.5,2,2.5,3,3.5,4,4.5,5,5.5,6,6.5,7,7.5,8)
@@ -55,5 +55,5 @@ new.df <- rbind(df.a, binary.solo)
 new.df
 
 
-
+###Where are the summary statistics or the code to write to a CSV? You're missing the last part of the assigment.
 
