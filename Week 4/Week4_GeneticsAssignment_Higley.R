@@ -2,7 +2,7 @@
   # give one explanation for why these data might be difficult to draw spatial inferences about genes.(3 points)
             # You can only visualize the clumping together of then data points.
   # Part 2: Despite the drawbacks, give the result or interpretation that you feel most confident in (3 points), and EXPLAIN WHY (4 points).
-            #
+            # The gene represented by the black colored dot is likely a housekeeping-type gene as it is universal and spread relatively equally across the scatterplot.
 
 
 # For your scripting assignment we will use the "ge_data" data frame found in the "stability" package.
