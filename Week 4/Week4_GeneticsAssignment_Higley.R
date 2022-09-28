@@ -1,6 +1,6 @@
 # Look at the plot and model results for our Dryad data in the tutorial. Part 1: Without knowing which points represent which groups, 
   # give one explanation for why these data might be difficult to draw spatial inferences about genes.(3 points)
-            # You can only visualize the clumping together of then data points
+            # You can only visualize the clumping together of then data points.
   # Part 2: Despite the drawbacks, give the result or interpretation that you feel most confident in (3 points), and EXPLAIN WHY (4 points).
             #
 
@@ -15,18 +15,25 @@ data("ge_data")
   # 'Yield Response' in this dataset is a measure of phenotype expression.
   # Hint: Look at the help file for this dataset.
 
-lm(ge_data$Env~ge_data$Gen)
-lm(ge_data$Yield~ge_data$Gen)
+lmEnv <- lm(ge_data$Yield~ge_data$Env)
+lmYield <- lm(ge_data$Yield~ge_data$Gen)
 
 # Test the significance of both models and look at the model summary. (3 points each)
   # Which model is a better fit to explain the yield response, and WHY? (6 points)
+        # 
   # Hint: Does one model seem more likely to be over-fitted?
+        # 
 
+anova(lmEnv)
+anova(lmYield)
 
-
+summary(lmEnv)
+summary(lmYield)
 
 # Which environment would be your very WORST choice for generating a strong yield response? (2 points)
+ 
+plot(ge_data$Yield~ge_data$Env)
 
-
+        #KSK would be worst for a strong yield response.
 
 
