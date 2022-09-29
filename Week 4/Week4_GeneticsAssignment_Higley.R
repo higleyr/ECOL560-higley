@@ -9,7 +9,9 @@
   # Install the "stability" package, load it into your R environment, and use the data() function to load the "ge_data". (2 points)
 
 install.packages("stability")
+library(stability)
 data("ge_data")
+force(ge_data)
 
 # Create two linear models for Yield Response: one related to the Environment and one to the Genotype. (2 points each)
   # 'Yield Response' in this dataset is a measure of phenotype expression.
@@ -20,9 +22,9 @@ lmYield <- lm(ge_data$Yield~ge_data$Gen)
 
 # Test the significance of both models and look at the model summary. (3 points each)
   # Which model is a better fit to explain the yield response, and WHY? (6 points)
-        # 
+        # The yield-environment model is better fit to explain yield response. This is because of the ratio of x to y values and how many things you are trying to explain.
   # Hint: Does one model seem more likely to be over-fitted?
-        # 
+        #  The model with the genotype is likely overfitted....?
 
 anova(lmEnv)
 anova(lmYield)
