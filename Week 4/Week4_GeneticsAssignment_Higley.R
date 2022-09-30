@@ -1,8 +1,8 @@
 # Look at the plot and model results for our Dryad data in the tutorial. Part 1: Without knowing which points represent which groups, 
   # give one explanation for why these data might be difficult to draw spatial inferences about genes.(3 points)
-            # You can only visualize the clumping together of then data points.
+            # You can only visualize the clumping together of then data points. #what does this tell you about the genes? This a good start to the answer.
   # Part 2: Despite the drawbacks, give the result or interpretation that you feel most confident in (3 points), and EXPLAIN WHY (4 points).
-            # The gene represented by the black colored dot is likely a housekeeping-type gene as it is universal and spread relatively equally across the scatterplot.
+            # The gene represented by the black colored dot is likely a housekeeping-type gene as it is universal and spread relatively equally across the scatterplot.#more of the why?
 
 
 # For your scripting assignment we will use the "ge_data" data frame found in the "stability" package.
@@ -11,7 +11,7 @@
 install.packages("stability")
 library(stability)
 data("ge_data")
-force(ge_data)
+force(ge_data) #having issues, were we?
 
 # Create two linear models for Yield Response: one related to the Environment and one to the Genotype. (2 points each)
   # 'Yield Response' in this dataset is a measure of phenotype expression.
@@ -36,6 +36,6 @@ summary(lmYield)
  
 plot(ge_data$Yield~ge_data$Env)
 
-        #KSK would be worst for a strong yield response.
+        #KSK would be worst for a strong yield response.#notice the question was not about a positive or negative response, simply a strong response. Sargodha is worst because it does not show any relationship to yield.
 
 
