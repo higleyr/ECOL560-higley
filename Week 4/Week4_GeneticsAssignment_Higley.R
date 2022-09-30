@@ -22,9 +22,9 @@ lmYield <- lm(ge_data$Yield~ge_data$Gen)
 
 # Test the significance of both models and look at the model summary. (3 points each)
   # Which model is a better fit to explain the yield response, and WHY? (6 points)
-        # The yield-environment model is better fit to explain yield response. This is because of the ratio of x to y values and how many things you are trying to explain.
+        # The yield-environment model is better fit to explain yield response. This is because of the ratio of x to y values and how many things you are trying to explain. #What about the r-squared and p values?
   # Hint: Does one model seem more likely to be over-fitted?
-        #  The model with the genotype is likely overfitted....?
+        #  The model with the genotype is likely overfitted....? Yes..why?
 
 anova(lmEnv)
 anova(lmYield)
