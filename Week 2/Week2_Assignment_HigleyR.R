@@ -45,9 +45,9 @@ b.plot <- barplot(df.mean$Mean, names.arg = df.mean$Factor, xlab = 'categories',
 # Create a scatter plot between two of your numeric columns.
   # Change the point shape and color to something NOT used in the example.
   # Change the x and y labels and add a title
-  # Export the plot as a JPEG by using the "Export" button in the plotting pane.
+  # Export the plot as a JPEG by using the "Export" button in the plotting pan
 
-plot()
+plot(df.a$`cant count`~df.a$`decimal fun`, xlab = "can't count", ylab = "yay decimals", main = "crying", pch = 14, col = "tomato")
 
 # Upload both plots with the script used to create them to GitHub.
   # Follow the same file naming format as last week for the script.
