@@ -4,12 +4,13 @@
   # Export and save the plot you've created. (2 points)
   # Zoom into your plot to look at the distribution for different strains.
 
+#Script to recreate fig4 in another file.
+
 # Do all of the strains in the plot have the same distributions (yes/no)? (2 pt)
         #no :)
 
 # Based on these observations of your strain distributions, why did the authors use a Kruskal-Wallis test rather than ANOVA to compare the strains? (2 pts)
-        #The data is abnormal
-#Ha ha ha...need to be a little more specific. We also prefer non-normal here.
+        #The data is not normal. B211, B203, and B204 have very broad distributions while the others are all incredibly condensed. - ANOVAs are only used for normal distributions.
 
 # Use the fitdist() and gofstat() functions to compare the poisson, negative binomial, and logistic distributions for:
   # (1) - The number of cells of progeny (data$Num.Cells.Progeny)
@@ -17,11 +18,8 @@
       # 3 points each
     #HINT- "Num.Cells.Progeny" has defined breaks. To display results, use the formula with the "chisqbreaks" argument as follows:
       #gofstat(list(fit.1, fit.2, fit.3, etc), chisqbreaks=c(1,2,4,8,16,32,64))
-#...where are the rest of the answers?
 
-Fig4Data <- read.csv(file='C:/GitHub/ECOL560-higley/Week 5/Dryad Data/Figure4Data.csv', header = TRUE)
-library(fitdistrplus)
-library(logspline)
+
 
 
 # Based on the AIC scores, which distribution is the best fit for: (4 pts)
